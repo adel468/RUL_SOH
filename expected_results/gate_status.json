@@ -1,0 +1,39 @@
+{
+  "primary_gate": "strict_interval_row_under",
+  "source_folder": "pm_interval_safety_workspace/outputs",
+  "output_folder": "pm_interval_safety_workspace/outputs",
+  "selected_rows": 150,
+  "unresolved_rows": 0,
+  "duplicate_seed_dataset_rows": 0,
+  "datasets_observed": [
+    "IMS",
+    "NASA Battery",
+    "NASA C-MAPSS",
+    "PRONOSTIA/FEMTO",
+    "XJTU-SY"
+  ],
+  "dataset_seed_counts": {
+    "IMS": 30,
+    "NASA Battery": 30,
+    "NASA C-MAPSS": 30,
+    "PRONOSTIA/FEMTO": 30,
+    "XJTU-SY": 30
+  },
+  "grid_ok": true,
+  "row_level_primary_gate_ok": true,
+  "all_dataset_gate_pass": true,
+  "overall_green": true,
+  "hard_gate": {
+    "coverage_min_required": 0.9,
+    "riskcov_min_required": 0.9,
+    "interval_false_safe_050_required": 0.0,
+    "interval_intervention_miss_025_required": 0.0,
+    "row_under_all_max_required": 0.05
+  },
+  "important_interpretation": [
+    "Final safety claim is interval-based, not point-prediction based.",
+    "Point intervention miss at 0.25 is retained as a diagnostic, not a hard gate.",
+    "combined point-or-interval gate is not the primary operational gate.",
+    "Bearing near-perfect R2 should not be framed as independent physical prognostic discovery; interpret as normalized degradation-coordinate tracking."
+  ]
+}

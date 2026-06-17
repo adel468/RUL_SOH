@@ -1,0 +1,11 @@
+Recommended manuscript wording for final strict gate:
+
+For each dataset and predeclared seed, candidate models and interval wrappers were evaluated using row-level predictions. The final candidate was selected only if it satisfied all hard interval-safety constraints: empirical coverage >= 0.90, risk-zone coverage >= 0.90 over y <= 0.25, zero interval false-safe events defined as y <= 0.25 and L > 0.50, zero interval intervention-miss events defined as y <= 0.25 and L > 0.25, and all-row underwarning <= 0.05. Among eligible candidates, the deterministic tie-breaker minimized mean interval width, followed by RMSE and MAE. The point-prediction intervention miss, y <= 0.25 and yhat > 0.25, was not used as a hard gate because the operational rule is interval based; it is reported separately as a diagnostic of point-estimate optimism near the urgent threshold.
+
+Recommended results wording:
+
+Under the strict interval intervention gate, all five datasets achieved 30/30 successful predeclared seeds with no unresolved seed-dataset rows. The final intervals achieved minimum empirical coverage >= 0.90 and minimum risk-zone coverage >= 0.90 across every dataset, with zero interval false-safe events at the 0.50 safety boundary and zero interval intervention-miss events at the 0.25 urgent boundary. Point-level intervention misses remain nonzero for some datasets and are therefore reported as diagnostic evidence that safety conclusions should be based on the interval decision rule rather than point predictions alone.
+
+Bearing wording caution:
+
+For PRONOSTIA/FEMTO, XJTU-SY, and IMS, high R2 values should be described as normalized degradation-coordinate tracking. They should not be presented as independent proof that vibration features alone recover physical failure dynamics. The manuscript should emphasize interval safety, negative controls, and diagnostic baselines rather than treating near-perfect bearing R2 as the primary contribution.

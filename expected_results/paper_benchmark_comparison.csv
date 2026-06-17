@@ -1,0 +1,2 @@
+dataset,nn_model,candidate_id,nn_decision,RMSE,MAE,R2,empirical_coverage,urgent_critical_coverage,interval_false_safe_rate,interval_underwarning_rate,mean_interval_width,strict_promotion,blocking_reason,benchmark_role
+NASA Battery,GRU_SEQUENCE,GRU_SEQUENCE__global_99,NN_STRICT_PASS,0.025713667264312717,0.017661764696426788,0.9765341412213483,0.9832775919732442,0.9880952380952381,0.0,0.0,0.22226057679593858,True,passes strict,Neural baseline for point-prediction comparison; final paper objective remains safety-calibrated maintenance decision intervals.
