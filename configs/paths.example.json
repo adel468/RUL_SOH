@@ -1,0 +1,12 @@
+{
+  "workspace_root": "D:/pm_interval_safety_workspace",
+  "data_root": "D:/pm_interval_safety_workspace/raw_datasets",
+  "output_root": "D:/pm_interval_safety_workspace/outputs",
+  "expected_dataset_folders": {
+    "cmapss": "CMAPSS",
+    "battery": "NASA_Battery",
+    "pronostia": "PRONOSTIA",
+    "xjtu_sy": "XJTU_SY",
+    "ims": "IMS"
+  }
+}

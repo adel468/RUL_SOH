@@ -1,0 +1,5 @@
+{
+  "config_file": "Created by scripts/01_extract_clean_features.py",
+  "expected_results_dir": "expected_results",
+  "note": "Generated outputs should be written outside the repository."
+}
